@@ -4,11 +4,11 @@ import Link from 'next/link';
 const Socials = () => {
   return (
     <ul className='flex justify-end gap-1'>
-      {SOCIALS.map(({ Name, href }) => {
+      {SOCIALS.map(({ Name, href }, index) => {
         return (
-          <li key={href}>
+          <li key={`${href} ${index}`}>
             <Link rel='stylesheet' href=''>
-              <Name sx={{ color: '#000000' }} />
+              <Name sx={{ color: '#fff' }} />
             </Link>
           </li>
         );

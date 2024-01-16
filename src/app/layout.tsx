@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/header/header';
-import { Sorts_Mill_Goudy } from 'next/font/google';
+import { EB_Garamond } from 'next/font/google';
 
-export const sorts_Mill_Goudy = Sorts_Mill_Goudy({
+export const addFont = EB_Garamond({
   subsets: ['latin'],
   weight: ['400'],
 });
 
-const montserrat = Montserrat({ subsets: ['latin'] });
+const mainFont = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Title Nail',
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='ru'>
-      <body className={`${montserrat.className} mx-auto max-w-7xl p-4`}>
+      <body className={`${mainFont.className} mx-auto max-w-7xl`}>
         <Header />
         {children}
       </body>

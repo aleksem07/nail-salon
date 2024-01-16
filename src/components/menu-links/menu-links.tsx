@@ -4,9 +4,9 @@ import Link from 'next/link';
 const MenuLinks = () => {
   return (
     <ul className='flex gap-2'>
-      {MENU_LINKS.map(({ name, href }) => {
+      {MENU_LINKS.map(({ name, href }, index) => {
         return (
-          <li key={href}>
+          <li key={`${href} ${index}`}>
             <Link href={href}>{name}</Link>
           </li>
         );
