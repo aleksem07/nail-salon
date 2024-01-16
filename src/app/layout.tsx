@@ -1,8 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import './globals.css';
+import Header from '@/components/header/header';
+import { Sorts_Mill_Goudy } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] });
+export const sorts_Mill_Goudy = Sorts_Mill_Goudy({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Title Nail',
@@ -15,8 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body className={inter.className}>{children}</body>
+    <html lang='ru'>
+      <body className={`${montserrat.className} mx-auto max-w-7xl p-4`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
