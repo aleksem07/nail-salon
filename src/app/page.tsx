@@ -2,6 +2,7 @@ import Promo from '@/components/promo/promo';
 import Services from '@/components/services/services';
 import About from '@/components/about/about';
 import Contacts from '@/components/contacts/contacts';
+import Footer from '@/components/footer/footer';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Services />
       <About />
       <Contacts />
+      <Footer />
     </main>
   );
 };

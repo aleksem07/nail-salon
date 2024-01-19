@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const MenuLinks = () => {
   return (
-    <ul className='flex gap-2'>
+    <ul className='flex gap-6'>
       {MENU_LINKS.map(({ name, href }, index) => {
         return (
           <li key={`${href} ${index}`}>

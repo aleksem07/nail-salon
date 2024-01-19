@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '@/UI/sass/colors.scss';
 
 :root {
   --foreground-rgb: 20, 20, 20;
@@ -22,11 +23,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+main section:first-child {
+  padding: 0;
+}
+
 button:hover,
 a:hover,
 svg:hover {
   transition: all 0.3s ease-out;
-  color: #49863a;
+  color: $color-add;
 }
 
 button,
