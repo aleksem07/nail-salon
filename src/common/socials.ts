@@ -3,18 +3,18 @@ import { Telegram, Call, WhatsApp, Instagram } from '@mui/icons-material';
 export const SOCIALS = [
   {
     Name: Telegram,
-    href: '/',
+    href: '//t.me/aleksem07',
   },
   {
     Name: Instagram,
-    href: '/',
+    href: '//instagram.com',
   },
   {
     Name: Call,
-    href: '/',
+    href: 'tel:+7912345678',
   },
   {
     Name: WhatsApp,
-    href: '/',
+    href: '//wa.me/',
   },
 ];

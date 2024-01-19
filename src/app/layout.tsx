@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
-import './globals.css';
+import './globals.scss';
 import Header from '@/components/header/header';
 import { EB_Garamond } from 'next/font/google';
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='ru'>
-      <body className={`${mainFont.className} mx-auto max-w-7xl`}>
+      <body className={`${mainFont.className}`}>
         <Header />
         {children}
       </body>

@@ -7,7 +7,7 @@ const Socials = () => {
       {SOCIALS.map(({ Name, href }, index) => {
         return (
           <li key={`${href} ${index}`}>
-            <Link rel='stylesheet' href=''>
+            <Link target='_blank' rel='stylesheet' href={href}>
               <Name sx={{ color: '#fff' }} />
             </Link>
           </li>
