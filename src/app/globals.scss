@@ -29,7 +29,10 @@ main section:first-child {
 
 button:hover,
 a:hover,
-svg:hover {
+svg:hover,
+button:focus-visible,
+a:focus-visible,
+svg:focus-visible {
   transition: all 0.3s ease-out;
   color: $color-add;
 }
