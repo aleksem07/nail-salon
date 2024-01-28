@@ -11,7 +11,6 @@ interface SimpleSliderProps {
 export default class SimpleSlider extends Component<SimpleSliderProps> {
   constructor(props: SimpleSliderProps) {
     super(props);
-    // const className = props.className || '';
   }
   render() {
     const settings = {

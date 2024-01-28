@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <Scroll className='fixed top-0 z-50 w-full'>
       <ul
-        className={`grid grid-cols-8 grid-rows-header items-end text-white ${styles.container}`}
+        className={`grid grid-cols-8 grid-rows-header items-end ${styles.container}`}
       >
         <li className='col-start-1 col-end-7 row-start-3 row-end-4 text-center'>
           <MenuLinks />

@@ -1,9 +1,9 @@
 import Address from '@/components/address/address';
 import OpeningTimes from '@/components/opening-times/opening-times';
-import Image from 'next/image';
 import stylesContainer from '@/UI/sass/container.module.scss';
 import stylesButton from '@/UI/sass/button.module.scss';
 import SimpleSlider from '@/components/slider/slider';
+import { ReactNode } from 'react';
 
 const Promo = () => {
   return (
