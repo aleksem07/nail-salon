@@ -1,9 +1,19 @@
-import Image from 'next/image'
+import Promo from '@/components/promo/promo';
+import Services from '@/components/services/services';
+import About from '@/components/about/about';
+import Contacts from '@/components/contacts/contacts';
+import Footer from '@/components/footer/footer';
 
-export default function Home() {
+const Home = () => {
   return (
-    <>
-      
-    </>
-  )
-}
+    <main>
+      <Promo />
+      <Services />
+      <About />
+      <Contacts />
+      <Footer />
+    </main>
+  );
+};
+
+export default Home;

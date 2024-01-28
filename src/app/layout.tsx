@@ -1,22 +1,32 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from 'next';
+import { Montserrat } from 'next/font/google';
+import './globals.scss';
+import Header from '@/components/header/header';
+import { EB_Garamond } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+export const addFont = EB_Garamond({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+
+const mainFont = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Title Nail',
   description: 'desc',
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='ru'>
+      <body className={`${mainFont.className}`}>
+        <Header />
+        {children}
+      </body>
     </html>
-  )
+  );
 }

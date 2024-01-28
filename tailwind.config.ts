@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 const config: Config = {
   content: [
@@ -13,8 +14,19 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      gridTemplateRows: {
+        header: 'auto 10px auto',
+      },
+    },
+    screens: {
+      desktop: '1280px',
+      laptop: '1024px',
+      tablet: '640px',
+      mobile: { max: '639px' },
+      ...defaultTheme.screens,
     },
   },
   plugins: [],
-}
-export default config
+};
+
+export default config;
