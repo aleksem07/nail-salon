@@ -8,7 +8,7 @@ const Header = () => {
   console.log('Scroll');
 
   return (
-    <Scroll className='fixed top-0 w-full'>
+    <Scroll className='fixed top-0 z-50 w-full'>
       <ul
         className={`grid grid-cols-8 grid-rows-header items-end text-white ${styles.container}`}
       >

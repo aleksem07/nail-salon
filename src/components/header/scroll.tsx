@@ -11,7 +11,7 @@ const Scroll = ({
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   const handleScroll = (): void => {
-    setIsScrolled(window.scrollY > 10);
+    setIsScrolled(window.scrollY > 100);
   };
 
   useEffect(() => {
