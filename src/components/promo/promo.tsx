@@ -10,7 +10,7 @@ const Promo = () => {
     <section
       className={`grid min-h-[100vh] grid-cols-8 grid-rows-8 items-center justify-center ${stylesContainer.container}`}
     >
-      <SimpleSlider className='col-start-5 col-end-9 row-span-9 max-w-full justify-center bg-black text-end shadow-xl p-2' />
+      <SimpleSlider className='col-start-5 col-end-9 row-span-9 max-w-full justify-center bg-black p-2 text-end shadow-xl' />
       <Address className='col-start-1 col-end-5 row-span-4 text-center' />
       <OpeningTimes className='col-start-1 col-end-3 row-start-6 justify-center pl-4 mobile:col-end-5 mobile:justify-start' />
 

@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <ParallaxBanner
       layers={[{ image: '/banner/promo-1.jpg', speed: -20 }]}
-      className="aspect-[3/1]"
+      className='aspect-[3/1]'
     />
   );
 };
