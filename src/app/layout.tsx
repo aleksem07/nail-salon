@@ -2,13 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.scss';
 import Header from '@/components/header/header';
-import { EB_Garamond } from 'next/font/google';
 import { Providers } from './providers';
-
-export const addFont = EB_Garamond({
-  subsets: ['latin'],
-  weight: ['400'],
-});
 
 const mainFont = Montserrat({ subsets: ['latin'] });
 
