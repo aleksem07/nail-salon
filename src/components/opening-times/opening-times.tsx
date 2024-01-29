@@ -1,5 +1,4 @@
 import { OPENING_TIMES } from '@/common/opening-times';
-import { addFont } from '@/app/layout';
 
 const OpeningTimes = ({ className }: { className?: string }) => {
   return (

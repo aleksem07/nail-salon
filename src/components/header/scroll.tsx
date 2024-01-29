@@ -21,8 +21,9 @@ const Scroll = ({
   }, []);
 
   const stickyHeaderStyle: React.CSSProperties = {
+    color: 'rgba(255, 255, 255, 1)',
     backgroundColor: isScrolled
-      ? 'rgba(51, 153, 153, 1)'
+      ? 'rgba(60, 30, 70, 1)'
       : 'rgba(36, 36, 36, 0.9)',
     transition: 'all 0.3s ease-out',
   };

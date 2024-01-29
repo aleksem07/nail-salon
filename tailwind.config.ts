@@ -19,7 +19,7 @@ const config: Config = {
       },
     },
     screens: {
-      desktop: '1280px',
+      desktop: '1480px',
       laptop: '1024px',
       tablet: '640px',
       mobile: { max: '639px' },
