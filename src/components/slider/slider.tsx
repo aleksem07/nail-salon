@@ -24,7 +24,7 @@ export default class SimpleSlider extends Component<SimpleSliderProps> {
       slidesToScroll: 1,
     };
     return (
-      <Slider {...settings} className={this.props.className}>
+      <Slider {...settings} className={`${this.props.className}`}>
         {SLIDES.map((slide, index) => (
           <div key={`${slide.image} ${index}`} className='h-[100vh] text-end'>
             <Image
