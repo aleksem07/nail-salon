@@ -8,7 +8,7 @@ import { ReactNode } from 'react';
 const Promo = () => {
   return (
     <section
-      className={`grid h-[100vmax] grid-cols-8 grid-rows-8 items-center justify-center ${stylesContainer.container}`}
+      className={`grid mobile:h-[100vmax] tablet:h-[100vmin] grid-cols-8 grid-rows-8 items-center justify-center ${stylesContainer.container}`}
     >
       <SimpleSlider className=' col-start-5 col-end-9 row-span-9 max-w-full justify-center bg-black tablet:p-2 p-1 text-end shadow-xl' />
       <Address className='col-start-1 col-end-5 row-span-4 text-center' />

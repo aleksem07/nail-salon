@@ -10,8 +10,9 @@ const Home = () => {
     <main>
       <Promo />
       <Services />
+      <Banner img={'/promo-4.jpg'} size='aspect-[6/1]' speed={-30}/>
       <About />
-      <Banner />
+      <Banner img={'/banner/promo-1.jpg'}/>
       <Contacts />
       <Footer />
     </main>
