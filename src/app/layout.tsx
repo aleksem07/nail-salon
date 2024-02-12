@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='ru'>
-      <body className={`${mainFont.className}`}>
+      <body className={`${mainFont.className} min-w-[320px]`}>
         <Header />
         <Providers>{children}</Providers>
       </body>
