@@ -10,7 +10,7 @@ export const MENU_LINKS = [
     href: `${AppRoutes.GALLERY}`,
   },
   {
-    name: 'Обо мне',
+    name: 'Обо\xA0мне',
     href: `${AppRoutes.ABOUT}`,
   },
   {

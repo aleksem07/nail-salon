@@ -1,9 +1,9 @@
 import { MENU_LINKS } from '@/common/menu-links';
 import Link from 'next/link';
 
-const MenuLinks = () => {
+const MenuLinks = ({ display = 'flex' }: { display?: string }) => {
   return (
-    <ul className='flex gap-6'>
+    <ul className={`${display} gap-6`}>
       {MENU_LINKS.map(({ name, href }, index) => {
         return (
           <li key={`${href} ${index}`}>
