@@ -3,4 +3,8 @@
   padding-inline: 1rem;
   padding-block: 0.5rem;
   max-width: 80rem;
+
+  @media screen and (max-width: 768px) {
+    padding-inline: 0;
+  }
 }

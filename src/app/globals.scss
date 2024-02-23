@@ -25,6 +25,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+main {
+  position: relative;
+}
+
 main section:first-child {
   padding: 0;
 }
