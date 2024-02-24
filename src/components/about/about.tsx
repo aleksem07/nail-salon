@@ -8,16 +8,25 @@ const About = () => {
     <>
       <section
         id={`${AppRoutes.ABOUT.slice(1)}`}
-        className={`flex  min-h-[100vh] bg-lime-100 pt-4 pb-4 ${stylesAbout.about}`}
+        className={`flex  min-h-[100vh] bg-fuchsia-100 pb-4 pt-4 ${stylesAbout.about}`}
       >
-        <div className={`${styles.container} w-ful grid tablet:grid-cols-2 gap-4`}>
+        <div
+          className={`${styles.container} w-ful grid gap-4 tablet:grid-cols-2`}
+        >
           <div className='flex w-full items-center justify-center'>
-            <Image src={'/promo-5.jpg'} alt='Привет! Это я!' width={300} height={300} className='h-full object-cover border-t-4 border-l-4' />
+            <Image
+              src={'/promo-5.jpg'}
+              alt='Привет! Это я!'
+              width={300}
+              height={300}
+              className='h-full object-cover'
+            />
           </div>
-          <div className={`${stylesAbout.aboutText} w-full bg-yellow-200 border-r-8 border-b-8`}>
-
-            Привет!<br />
-            Тут немного информации обо мне.<br />
+          <div className={`${stylesAbout.aboutText} w-full bg-yellow-50`}>
+            Привет!
+            <br />
+            Тут немного информации обо мне.
+            <br />
             Далеко-далеко за словесными горами в стране гласных, и согласных
             живут рыбные тексты. Всемогущая однажды коварных заголовок маленький
             своих свою, рыбного рукопись. Строчка страна речью маленький, пор
