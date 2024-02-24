@@ -6,7 +6,7 @@ import { imagesGallery } from '@/common/gallery';
 const Gallery = () => {
   return (
     <>
-      <section id={`${AppRoutes.GALLERY.slice(1)}`} className={`min-h-[100vh]`}>
+      <section id={`${AppRoutes.GALLERY.slice(1)}`} className={''}>
         <div className={` ${stylesWrapper.container}`}>
           <ImageGallery
             items={imagesGallery}
