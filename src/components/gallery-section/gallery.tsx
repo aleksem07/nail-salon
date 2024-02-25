@@ -11,7 +11,7 @@ const Gallery = () => {
           <ImageGallery
             items={imagesGallery}
             showPlayButton={true}
-            thumbnailPosition={'bottom'}
+            thumbnailPosition={'left'}
             showIndex={true}
             autoPlay={false}
             slideDuration={1000}

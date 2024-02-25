@@ -16,7 +16,7 @@ const About = () => {
         >
           <div className={`${stylesAbout.about_block__text} w-full`}>
             <h2 className={`${stylesAbout.title}`}>
-              The Beauty is about being Comfortable in your own skin!
+              Красота — это когда ты остаешься самим собой
             </h2>
             <p className={`${stylesAbout.desc}`}>
               Далеко-далеко за, словесными горами в стране гласных и согласных
