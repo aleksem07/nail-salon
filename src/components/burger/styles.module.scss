@@ -1,0 +1,47 @@
+body:has(.burger) {
+  overflow: hidden;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  animation: fade 0.2s ease-in-out;
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+

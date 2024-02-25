@@ -11,10 +11,10 @@ export const SLIDES = [
     image: '/promo-3.jpg',
     title: 'Background-5',
   },
-  {
-    image: '/promo-5.jpg',
-    title: 'Background-4',
-  },
+  // {
+  //   image: '/promo-5.jpg',
+  //   title: 'Background-4',
+  // },
   {
     image: '/promo-1.jpg',
     title: 'Background-9',

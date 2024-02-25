@@ -6,8 +6,16 @@ export const MENU_LINKS = [
     href: `${AppRoutes.SERVICES}`,
   },
   {
-    name: 'Обо мне',
+    name: 'Галерея',
+    href: `${AppRoutes.GALLERY}`,
+  },
+  {
+    name: 'Обо\xA0мне',
     href: `${AppRoutes.ABOUT}`,
+  },
+  {
+    name: 'Отзывы',
+    href: `${AppRoutes.REVIEWS}`,
   },
   {
     name: 'Контакты',

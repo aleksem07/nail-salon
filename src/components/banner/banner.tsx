@@ -1,11 +1,11 @@
 'use client';
 import { ParallaxBanner } from 'react-scroll-parallax';
 
-const Banner = () => {
+const Banner = ({img, size = 'aspect-[3/1]', speed = -20}: {img: string, size?: string, speed?: number}) => {
   return (
     <ParallaxBanner
-      layers={[{ image: '/banner/promo-1.jpg', speed: -20 }]}
-      className='aspect-[3/1]'
+      layers={[{ image: img, speed: speed }]}
+      className={size}
     />
   );
 };

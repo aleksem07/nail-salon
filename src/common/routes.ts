@@ -3,4 +3,6 @@ export enum AppRoutes {
   SERVICES = '#services',
   ABOUT = '#about',
   CONTACTS = '#contacts',
+  GALLERY = '#gallery',
+  REVIEWS = '#reviews',
 }
