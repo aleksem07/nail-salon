@@ -1,4 +1,11 @@
 @import '@/UI/sass/colors.scss';
+.container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  max-width: 80rem;
+}
+
 .footer {
   color: $color-white;
   background-color: $color-third;

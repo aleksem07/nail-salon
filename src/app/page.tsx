@@ -14,8 +14,8 @@ const Home = () => {
 
       <Promo />
       <Services />
-      <Gallery />
       <Banner img={'/promo-4.jpg'} size='aspect-[6/1]' speed={-30} />
+      <Gallery />
       <About />
       <Banner img={'/banner/promo-1.jpg'} />
       <Contacts />

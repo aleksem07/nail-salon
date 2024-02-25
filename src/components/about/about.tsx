@@ -2,39 +2,56 @@ import styles from '@/UI/sass/container.module.scss';
 import { AppRoutes } from '@/common/routes';
 import stylesAbout from './about.module.scss';
 import Image from 'next/image';
+import { ADVANTAGES } from '@/common/about';
 
 const About = () => {
   return (
     <>
       <section
         id={`${AppRoutes.ABOUT.slice(1)}`}
-        className={`flex  min-h-[100vh] bg-fuchsia-100 pb-4 pt-4 ${stylesAbout.about}`}
+        className={`flex  bg-blue-50 pb-4 pt-4 ${stylesAbout.about}`}
       >
         <div
-          className={`${styles.container} w-ful grid gap-4 tablet:grid-cols-2`}
+          className={`${styles.container} grid w-full grid-cols-2 gap-4 laptop:flex laptop:flex-col-reverse laptop:gap-8`}
         >
-          <div className='flex w-full items-center justify-center'>
+          <div className={`${stylesAbout.about_block__text} w-full`}>
+            <h2 className={`${stylesAbout.title}`}>
+              The Beauty is about being Comfortable in your own skin!
+            </h2>
+            <p className={`${stylesAbout.desc}`}>
+              Далеко-далеко за, словесными горами в стране гласных и согласных
+              живут рыбные тексты. Своего, пунктуация? Наш повстречался своего
+              вопроса безопасную, лучше назад приставка букв дал родного дорогу
+              все ему. Инициал даль заголовок образ.
+            </p>
+            <div className={`${stylesAbout.advantages}`}>
+              {ADVANTAGES.map((item) => (
+                <div key={item.id} className={`${stylesAbout.advantage}`}>
+                  <>
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      width={75}
+                      height={75}
+                    ></Image>
+                    <h3 className={`${stylesAbout.advantages_title}`}>
+                      {item.title}
+                    </h3>
+                  </>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div
+            className={`w-full max-w-[500px] laptop:max-w-[350px] mobile:max-w-[250px]  ${stylesAbout.about_block__image}`}
+          >
             <Image
               src={'/promo-5.jpg'}
               alt='Привет! Это я!'
-              width={300}
-              height={300}
-              className='h-full object-cover'
+              width={500}
+              height={576}
+              className='object-cover'
             />
-          </div>
-          <div className={`${stylesAbout.aboutText} w-full bg-yellow-50`}>
-            Привет!
-            <br />
-            Тут немного информации обо мне.
-            <br />
-            Далеко-далеко за словесными горами в стране гласных, и согласных
-            живут рыбные тексты. Всемогущая однажды коварных заголовок маленький
-            своих свою, рыбного рукопись. Строчка страна речью маленький, пор
-            знаках курсивных необходимыми свой рот парадигматическая.
-            Далеко-далеко за словесными горами в стране гласных и согласных
-            живут, рыбные тексты. Рукопись вопрос скатился прямо предупредила
-            журчит, приставка рыбными за залетают злых. Возвращайся своих над от
-            всех его даль если алфавит текст?
           </div>
         </div>
       </section>

@@ -13,7 +13,7 @@ const Gallery = () => {
             showPlayButton={true}
             thumbnailPosition={'bottom'}
             showIndex={true}
-            autoPlay={true}
+            autoPlay={false}
             slideDuration={1000}
           />
         </div>

@@ -7,7 +7,7 @@ const Services = () => {
     <>
       <section
         id={`${AppRoutes.SERVICES.slice(1)}`}
-        className={`min-h-[100vh] bg-blue-100 ${stylesServices.services}`}
+        className={`min-h-[100vh] bg-blue-100 ${stylesServices.services || ''}`}
       >
         <div className={` ${styles.container}`}>Services</div>
       </section>
