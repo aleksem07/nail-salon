@@ -34,9 +34,7 @@ const About = () => {
                       width={75}
                       height={75}
                     ></Image>
-                    <h3 className={`${stylesAbout.advantages_title}`}>
-                      {item.title}
-                    </h3>
+                    <h3>{item.title}</h3>
                   </>
                 </div>
               ))}
@@ -50,7 +48,7 @@ const About = () => {
               alt='Привет! Это я!'
               width={500}
               height={576}
-              className='object-cover'
+              className='h-[100%] object-cover'
             />
           </div>
         </div>

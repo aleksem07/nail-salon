@@ -57,7 +57,7 @@ $accentColor: #e8d6c1;
   &__text {
     animation: rotateReverse normal infinite $rotationDuration linear;
     transform-origin: 50% 50%;
-    font-size: 24px;
+    font-size: 25px;
 
     .link:hover & {
       animation-play-state: paused;
