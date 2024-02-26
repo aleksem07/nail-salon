@@ -6,6 +6,7 @@ import Footer from '@/components/footer/footer';
 import Banner from '@/components/banner/banner';
 import GetAction from '@/components/getAction/get-action';
 import Gallery from '@/components/gallery-section/gallery';
+import Reviews from '@/components/reviews-section/reviews';
 
 const Home = () => {
   return (
@@ -15,8 +16,9 @@ const Home = () => {
       <Promo />
       <Services />
       <Banner img={'/promo-4.jpg'} size='aspect-[6/1]' speed={-30} />
-      <Gallery />
       <About />
+      <Gallery />
+      <Reviews />
       <Banner img={'/banner/promo-1.jpg'} />
       <Contacts />
       <Footer />

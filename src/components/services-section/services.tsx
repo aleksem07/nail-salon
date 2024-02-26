@@ -13,6 +13,9 @@ const Services = () => {
         className={`min-h-[100vh] bg-blue-50 ${stylesServices.services || ''}`}
       >
         <div className={` ${styles.container}`}>
+          <div className='max-md:mt-10 mt-24 text-center text-base font-semibold uppercase leading-6 tracking-widest text-slate-500'>
+            Услуги
+          </div>
           <h2 className={`${stylesServices.title}`}>
             Красота человека заключается в богатстве его различий
           </h2>

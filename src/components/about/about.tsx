@@ -9,8 +9,11 @@ const About = () => {
     <>
       <section
         id={`${AppRoutes.ABOUT.slice(1)}`}
-        className={`flex  bg-blue-50 pb-4 pt-4 ${stylesAbout.about}`}
+        className={`  bg-blue-50 pb-4 pt-4 ${stylesAbout.about}`}
       >
+        <div className='max-md:mt-10 mt-24 text-center text-base font-semibold uppercase leading-6 tracking-widest text-slate-500'>
+          Обо мне
+        </div>
         <div
           className={`${styles.container} grid w-full grid-cols-2 gap-4 laptop:flex laptop:flex-col-reverse laptop:gap-8`}
         >

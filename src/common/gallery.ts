@@ -23,10 +23,7 @@ export const imagesGallery = [
     original: '/gallery/6.jpg',
     thumbnail: '/gallery/6.jpg',
   },
-  {
-    original: '/gallery/8.jpg',
-    thumbnail: '/gallery/8.jpg',
-  },
+
   {
     original: '/gallery/9.jpg',
     thumbnail: '/gallery/9.jpg',
