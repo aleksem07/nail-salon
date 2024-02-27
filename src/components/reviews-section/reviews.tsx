@@ -2,6 +2,7 @@ import styles from '@/UI/sass/container.module.scss';
 import { AppRoutes } from '@/common/routes';
 import Image from 'next/image';
 import { REVIEWS } from '@/common/reviews';
+import stylesReviews from './reviews.module.scss';
 
 const Reviews = () => {
   return (
@@ -37,9 +38,12 @@ const Reviews = () => {
                             alt='reviewer'
                             width={100}
                             height={100}
-                            className='aspect-square w-[74px]'
+                            className='aspect-square w-[74px] object-contain'
                           />
                           <div className='my-auto grow justify-center py-5'>
+                            <div
+                              className={`flex pb-1 ${stylesReviews.stars}`}
+                            ></div>
                             {reviewer}
                           </div>
                         </div>
@@ -49,7 +53,7 @@ const Reviews = () => {
                           height={70}
                           loading='lazy'
                           src='/review/quotes.png'
-                          className='fill-grey z-0 my-auto aspect-[1.25] w-[70px] mobile:hidden'
+                          className='my-auto aspect-[1.25] w-[70px] mobile:hidden'
                         />
                       </div>
                     </div>
