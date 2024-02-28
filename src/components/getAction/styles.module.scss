@@ -5,7 +5,8 @@ $easeIn: cubic-bezier(0.32, 0, 0.67, 0);
 $easeOut: cubic-bezier(0.33, 1, 0.68, 1);
 
 $textColor: #2b3338;
-$bgColor: #a6b8b1;
+// $bgColor: #a6b8b1;
+$bgColor: rgba(255, 0, 34, 0.5);
 $accentColor: #e8d6c1;
 
 .link {
@@ -36,7 +37,7 @@ $accentColor: #e8d6c1;
   &__cloud {
     transform-origin: 50% 50%;
     animation: rotate normal infinite 3 * $rotationDuration linear;
-    fill: rgba(255, 255, 255, 0.15);
+    fill: $bgColor;
   }
 
   &__face,
