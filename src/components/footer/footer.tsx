@@ -14,14 +14,12 @@ const Footer = ({ className }: { className?: string }) => {
       className={`min-h-16 bg-slate-300 ${styles.footer} ${className || ''}`}
     >
       <section className={``}>
-        <div
-          className={`${styles.container}`}
-        >
-          <div className='flex items-end justify-between py-10 border-b mobile:py-4 mobile:gap-4  mobile:grid mobile:justify-center '>
+        <div className={`${styles.container}`}>
+          <div className='flex items-end justify-between border-b py-10 mobile:grid mobile:justify-center  mobile:gap-4 mobile:py-4 '>
             <Logo />
             <Socials className='mobile:justify-center' />
           </div>
-          <div className='flex justify-between py-10 mobile:grid mobile:justify-center '>
+          <div className='flex justify-between gap-10 py-10 mobile:grid mobile:justify-center '>
             <MenuLinks display='grid mobile:hidden' />
             <Address />
             <OpeningTimes />
@@ -30,10 +28,8 @@ const Footer = ({ className }: { className?: string }) => {
       </section>
 
       <section className={`bg-slate-800`}>
-        <div
-          className={`${styles.container}`}
-        >
-          <div className='flex items-end justify-between'>
+        <div className={`${styles.container}`}>
+          <div className='flex items-end justify-between mobile:grid mobile:gap-2'>
             <p className='text-md'>created by aleksem07 © {currentYear}</p>
             <Contacts className='' />
           </div>

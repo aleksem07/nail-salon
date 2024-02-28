@@ -29,7 +29,7 @@ const Reviews = () => {
                     <div className='max-md:px-5 max-md:max-w-full flex-1 justify-center bg-white px-12 pb-14 pt-14 text-xl leading-9 text-neutral-900'>
                       {text}
                     </div>
-                    <div className='max-md:px-5 max-md:max-w-full flex flex-col justify-center whitespace-nowrap bg-gray-800 px-12 py-7 text-xl font-bold leading-8 tracking-normal text-white'>
+                    <div className='max-md:px-5 max-md:max-w-full flex flex-col justify-center whitespace-nowrap bg-gray-800 px-12 py-7 text-xl font-bold leading-8 tracking-normal text-white mobile:px-4'>
                       <div className='max-md:flex-wrap max-md:max-w-full flex w-full justify-between gap-5'>
                         <div className='flex justify-between gap-5'>
                           <Image

@@ -1,6 +1,6 @@
-import { GitHubIcon } from '@/UI/icons/github-icon';
-import { TelegramIcon } from '@/UI/icons/telegram-icon';
-import { MailIcon } from '@/UI/icons/mail-icon';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 export const CONTACTS = [
   {
@@ -15,7 +15,7 @@ export const CONTACTS = [
   },
   {
     name: 'mail',
-    Icon: MailIcon,
+    Icon: MailOutlineIcon,
     link: 'mailto:aleksem07@gmail.com',
   },
 ];
