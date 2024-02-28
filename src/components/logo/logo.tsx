@@ -1,7 +1,7 @@
 import { EB_Garamond } from 'next/font/google';
 import Link from 'next/link';
 
-const addFont = EB_Garamond({subsets: ['latin']});
+const addFont = EB_Garamond({ subsets: ['latin'] });
 
 const Logo = () => {
   return (
