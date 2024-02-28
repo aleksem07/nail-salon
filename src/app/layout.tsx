@@ -9,7 +9,7 @@ const mainFont = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Title Nail',
-  description: 'desc',
+  description: 'The Best Nail Company in the World',
 };
 
 export default function RootLayout({
