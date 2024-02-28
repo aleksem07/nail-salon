@@ -11,8 +11,8 @@ const Reviews = () => {
       className={`bg-blue-50 ${''}`}
     >
       <div className={`${styles.container}`}>
-        <div className='max-md:px-5 flex flex-col items-center bg-slate-100 py-12'>
-          <div className='max-md:mt-10 mt-10 text-center text-base font-semibold uppercase leading-6 tracking-widest text-slate-500'>
+        <div className='max-md:px-5 flex flex-col items-center bg-slate-100'>
+          <div className='mt-10 text-center text-base font-semibold uppercase leading-6 tracking-widest text-slate-500'>
             Отзывы
           </div>
           <div className='max-md:max-w-full max-md:text-4xl text-center text-5xl font-bold leading-[58.5px] tracking-tight text-neutral-900'>

@@ -1,9 +1,9 @@
 import stylesButton from '@/UI/sass/button.module.scss';
 
-const Button = () => {
+const Button = ({ className }: { className: string }) => {
   return (
     <button
-      className={`col-start-1 col-end-3 row-start-7 self-end text-center text-center mobile:col-end-5 mobile:justify-start ${stylesButton.button}`}
+      className={`self-end text-center mobile:justify-start ${stylesButton.button} ${className || ''}`}
     >
       <span></span>
       Записаться

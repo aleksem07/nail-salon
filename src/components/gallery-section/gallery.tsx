@@ -8,7 +8,7 @@ const Gallery = () => {
     <>
       <section id={`${AppRoutes.GALLERY.slice(1)}`} className={''}>
         <div className={` ${stylesWrapper.container}`}>
-          <div className='max-md:mt-10 mb-6 mt-24 text-center text-base font-semibold uppercase leading-6 tracking-widest text-slate-500'>
+          <div className='mb-6 mt-10 text-center text-base font-semibold uppercase leading-6 tracking-widest text-slate-500'>
             Галерея
           </div>
           <ImageGallery
