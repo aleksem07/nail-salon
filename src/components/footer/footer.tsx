@@ -5,6 +5,7 @@ import Socials from '@/components/social/social';
 import MenuLinks from '../menu-links/menu-links';
 import Address from '../address/address';
 import OpeningTimes from '../opening-times/opening-times';
+import Link from 'next/link';
 
 const currentYear = new Date().getFullYear();
 
@@ -24,6 +25,10 @@ const Footer = ({ className }: { className?: string }) => {
             <Address />
             <OpeningTimes />
           </div>
+          <p> *Все цены не являются офертой</p>
+          <Link href='https://yandex.ru/legal/maps_termsofuse/'>
+            **Условия использования Яндекс.Карт
+          </Link>
         </div>
       </section>
 

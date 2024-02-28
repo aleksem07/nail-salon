@@ -17,7 +17,7 @@ const PriceList = ({ priceList }: { priceList: PriceListProps[] }) => {
               <div className={`${styles.item}`}>
                 <h3>{title}</h3>
                 <p></p>
-                <h3>₽{price}</h3>
+                <h3>₽{price}*</h3>
               </div>
               <p className={`${styles.desc}`}>{desc}</p>
             </li>
