@@ -1,0 +1,12 @@
+.stars {
+  width: 105px;
+  height: 20px;
+  background: url('/icons/star.svg') repeat;
+  background-size: contain;
+  background-position: center;
+  color: red;
+
+  &:hover {
+    color: red;
+  }
+}

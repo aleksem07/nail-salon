@@ -1,17 +1,21 @@
 import { AppRoutes } from '@/common/routes';
 
 export const MENU_LINKS = [
+    {
+    name: 'Главная',
+    href: `${AppRoutes.MAIN}`,
+  },
   {
     name: 'Услуги',
     href: `${AppRoutes.SERVICES}`,
   },
   {
-    name: 'Галерея',
-    href: `${AppRoutes.GALLERY}`,
-  },
-  {
     name: 'Обо\xA0мне',
     href: `${AppRoutes.ABOUT}`,
+  },
+  {
+    name: 'Галерея',
+    href: `${AppRoutes.GALLERY}`,
   },
   {
     name: 'Отзывы',

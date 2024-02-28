@@ -2,7 +2,7 @@
 import Logo from '@/components/logo/logo';
 import Socials from '@/components/social/social';
 import MenuLinks from '@/components/menu-links/menu-links';
-import styles from '@/UI/sass/container.module.scss';
+import styles from './styles.module.scss';
 import Scroll from './scroll';
 import BurgerMenu from '@/components/burger/burger';
 import { Squash as Hamburger } from 'hamburger-react';

@@ -3,13 +3,13 @@ import { Montserrat } from 'next/font/google';
 import './globals.scss';
 import Header from '@/components/header/header';
 import { Providers } from './providers';
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const mainFont = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Title Nail',
-  description: 'desc',
+  description: 'The Best Nail Company in the World',
 };
 
 export default function RootLayout({
@@ -19,12 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='ru'>
-      <body className={`${mainFont.className} min-w-[320px]`}>
-        
+      <body className={`${mainFont.className} `}>
         <Header />
         <Providers>
           {children}
-          <SpeedInsights />  
+          <SpeedInsights />
         </Providers>
       </body>
     </html>

@@ -1,9 +1,9 @@
 import { SOCIALS } from '@/common/socials';
 import Link from 'next/link';
 
-const Socials = () => {
+const Socials = ({className} : {className?: string}) => {
   return (
-    <ul className='flex justify-end gap-3'>
+    <ul className={`z-10 flex justify-end gap-3 ${className || ''}`}>
       {SOCIALS.map(({ Name, href }, index) => {
         return (
           <li key={`${href} ${index}`}>

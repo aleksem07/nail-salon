@@ -2,7 +2,7 @@ import { EB_Garamond } from 'next/font/google';
 import { ADDRESS } from '@/common/address';
 import Link from 'next/link';
 
-const addFont = EB_Garamond({subsets: ['latin']});
+const addFont = EB_Garamond({ subsets: ['latin'] });
 
 const Address = ({ className }: { className?: string }) => {
   return (

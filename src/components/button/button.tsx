@@ -1,14 +1,18 @@
 import stylesButton from '@/UI/sass/button.module.scss';
+import Link from 'next/link';
 
-const Button = () => {
+const Button = ({ className }: { className: string }) => {
   return (
-    <button
-      className={`col-start-1 col-end-3 row-start-7 self-end text-center text-center mobile:col-end-5 mobile:justify-start ${stylesButton.button}`}
+    <Link
+      href={'tel:+79000000000'}
+      className={`self-end text-center mobile:justify-start ${className || ''}`}
     >
-      <span></span>
-      Записаться
-      <span></span>
-    </button>
+      <button className={`${stylesButton.button}`}>
+        <span></span>
+        Записаться
+        <span></span>
+      </button>
+    </Link>
   );
 };
 

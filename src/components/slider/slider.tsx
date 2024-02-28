@@ -26,7 +26,10 @@ export default class SimpleSlider extends Component<SimpleSliderProps> {
     return (
       <Slider {...settings} className={`${this.props.className}`}>
         {SLIDES.map((slide, index) => (
-          <div key={`${slide.image} ${index}`} className='mobile:h-[100vmax] tablet:h-[100vmin] text-end'>
+          <div
+            key={`${slide.image} ${index}`}
+            className='text-end tablet:h-[100vmin] mobile:h-[100vmax]'
+          >
             <Image
               className='h-full object-cover'
               src={slide.image}

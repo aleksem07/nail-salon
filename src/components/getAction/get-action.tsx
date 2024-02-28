@@ -1,7 +1,11 @@
 import styles from './styles.module.scss';
+import Link from 'next/link';
 
 const GetAction = () => (
-  <a href='#' className={`${styles.link} ${styles.link__alt}`}>
+  <Link
+    href='tel:+79000000000'
+    className={`${styles.link} ${styles.link__alt}`}
+  >
     <svg
       viewBox='0 0 200 200'
       width='150'
@@ -36,7 +40,7 @@ const GetAction = () => (
         </textPath>
       </text>
     </svg>
-  </a>
+  </Link>
 );
 
 export default GetAction;

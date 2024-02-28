@@ -3,7 +3,7 @@ import { OPENING_TIMES } from '@/common/opening-times';
 const OpeningTimes = ({ className }: { className?: string }) => {
   return (
     <div className={`grid justify-start ${className || ''}`}>
-      <h2 className='m-0 uppercase'>Режим работы</h2>
+      <h4 className='m-0 uppercase'>Режим работы</h4>
       <ul>
         {OPENING_TIMES.map(({ day, time }, index) => {
           return (

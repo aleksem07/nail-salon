@@ -8,12 +8,15 @@ const Gallery = () => {
     <>
       <section id={`${AppRoutes.GALLERY.slice(1)}`} className={''}>
         <div className={` ${stylesWrapper.container}`}>
+          <div className='mb-6 mt-10 text-center text-base font-semibold uppercase leading-6 tracking-widest text-slate-500'>
+            Галерея
+          </div>
           <ImageGallery
             items={imagesGallery}
             showPlayButton={true}
             thumbnailPosition={'bottom'}
             showIndex={true}
-            autoPlay={true}
+            autoPlay={false}
             slideDuration={1000}
           />
         </div>
